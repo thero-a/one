@@ -43,6 +43,13 @@
     footer { text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem; }
 
     @media (max-width: 600px) { header h1 { font-size: 2rem; } }
+        .skill-icon-img {
+    width: 60px;        /* adjust size as needed */
+    height: 60px;       /* keep logos square */
+    margin-bottom: 15px;
+    object-fit: contain; /* prevent stretching */
+    }
+
   </style>
 </head>
 <body>
@@ -60,15 +67,40 @@
 
   <!-- ====== Skills Section ====== -->
   <section>
-    <h2 class="section-title">Skills</h2>
-    <div class="grid">
-      <div class="skill-card"><div class="skill-icon">💻</div><h3>Coding</h3><p>Python, JavaScript, Arduino, automation, web apps.</p></div>
-      <div class="skill-card"><div class="skill-icon">🛠️</div><h3>Fusion 360</h3><p>3D modeling, assemblies, mechanical design.</p></div>
-      <div class="skill-card"><div class="skill-icon">⚙️</div><h3>SolidWorks</h3><p>Mechanical parts, simulation, product prototyping.</p></div>
-      <div class="skill-card"><div class="skill-icon">🎬</div><h3>Video Editing</h3><p>Adobe Premiere Pro, DaVinci Resolve, cinematic storytelling.</p></div>
-      <div class="skill-card"><div class="skill-icon">🎨</div><h3>UI/UX Design</h3><p>Figma, user-friendly interfaces, intuitive experiences.</p></div>
+  <h2 class="section-title">Skills</h2>
+  <div class="grid">
+    <div class="skill-card">
+      <div class="skill-icon">💻</div>
+      <h3>Coding</h3>
+      <p>Python, JavaScript, Arduino, automation, web apps.</p>
     </div>
-  </section>
+
+    <div class="skill-card">
+      <img src="fusion360.png" alt="Fusion 360 Logo" class="skill-icon-img">
+      <h3>Fusion 360</h3>
+      <p>3D modeling, assemblies, mechanical design.</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="solidworks.png" alt="SolidWorks Logo" class="skill-icon-img">
+      <h3>SolidWorks</h3>
+      <p>Mechanical parts, simulation, product prototyping.</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">🎬</div>
+      <h3>Video Editing</h3>
+      <p>Adobe Premiere Pro, DaVinci Resolve, cinematic storytelling.</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">🎨</div>
+      <h3>UI/UX Design</h3>
+      <p>Figma, user-friendly interfaces, intuitive experiences.</p>
+    </div>
+  </div>
+</section>
+
 
   <!-- ====== Work / Projects Section ====== -->
   <section>
