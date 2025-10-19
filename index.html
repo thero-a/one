@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aturinda Ronnie | Portfolio</title>
+  <style>
+    /* ====== Global Styles ====== */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+    body { background: linear-gradient(135deg, #111827, #1e293b); color: #f8fafc; line-height: 1.6; }
+
+    h1,h2,h3 { color: #38bdf8; }
+    p { color: #cbd5e1; }
+
+    a { color: #38bdf8; text-decoration: none; }
+
+    header { text-align: center; padding: 60px 20px 20px; }
+    header h1 { font-size: 2.5rem; font-weight: 700; }
+    header p { font-size: 1.2rem; }
+
+    /* ====== Sections ====== */
+    section { padding: 50px 10%; }
+    .section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+
+    /* ====== Skills Grid ====== */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+    .skill-card, .work-card, .cert-card, .lead-card {
+      background: #1e293b; border-radius: 16px; padding: 25px; text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .skill-card:hover, .work-card:hover, .cert-card:hover, .lead-card:hover {
+      transform: translateY(-8px); box-shadow: 0 6px 25px rgba(56, 189, 248, 0.3);
+    }
+    .skill-icon { font-size: 3rem; margin-bottom: 15px; }
+
+    /* ====== Work Section ====== */
+    .work-card img, .work-card video { width: 100%; border-radius: 12px; margin-bottom: 15px; }
+
+    /* ====== Certifications & Leadership ====== */
+    .list-card { text-align: left; padding: 20px; border-radius: 12px; background: #1e293b; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+
+    /* ====== Footer ====== */
+    footer { text-align: center; padding: 30px; color: #64748b; font-size: 0.9rem; }
+
+    @media (max-width: 600px) { header h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+
+  <!-- ====== Header ====== -->
+  <header>
+  <img src="me.jpg" alt="My Photo"
+       style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:20px; border: 4px solid #38bdf8;">
+  
+  <h1>Aturinda Ronnie</h1>
+  <p>Multidisciplinary Creator | Engineer | Designer</p>
+</header>
+
+
+
+  <!-- ====== Skills Section ====== -->
+  <section>
+    <h2 class="section-title">Skills</h2>
+    <div class="grid">
+      <div class="skill-card"><div class="skill-icon">💻</div><h3>Coding</h3><p>Python, JavaScript, Arduino, automation, web apps.</p></div>
+      <div class="skill-card"><div class="skill-icon">🛠️</div><h3>Fusion 360</h3><p>3D modeling, assemblies, mechanical design.</p></div>
+      <div class="skill-card"><div class="skill-icon">⚙️</div><h3>SolidWorks</h3><p>Mechanical parts, simulation, product prototyping.</p></div>
+      <div class="skill-card"><div class="skill-icon">🎬</div><h3>Video Editing</h3><p>Adobe Premiere Pro, DaVinci Resolve, cinematic storytelling.</p></div>
+      <div class="skill-card"><div class="skill-icon">🎨</div><h3>UI/UX Design</h3><p>Figma, user-friendly interfaces, intuitive experiences.</p></div>
+    </div>
+  </section>
+
+  <!-- ====== Work / Projects Section ====== -->
+  <section>
+    <h2 class="section-title">Work & Projects</h2>
+    <div class="grid">
+      <div class="work-card">
+        <video controls>
+          <source src="videos/project1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Robotics Arm Project</h3>
+        <p>Arduino-controlled robotic arm for precise object manipulation.</p>
+      </div>
+      <div class="work-card">
+        <img src="images/placeholder_project.jpg" alt="Project Placeholder">
+        <h3>3D Modeling Design</h3>
+        <p>Complex mechanical assembly modeled in Fusion 360.</p>
+      </div>
+      <div class="work-card">
+        <video controls>
+          <source src="videos/ui_demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>UI/UX App Prototype</h3>
+        <p>Interactive mobile app design demo using Figma and prototyping tools.</p>
+      </div>
+      <div class="work-card">
+        <img src="images/placeholder_project2.jpg" alt="Project Placeholder">
+        <h3>Mechanical Design Showcase</h3>
+        <p>Placeholder image for future projects — replace with your work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Certifications ====== -->
+  <section>
+    <h2 class="section-title">Certifications</h2>
+    <div class="grid">
+      <div class="cert-card list-card">
+        <img src="images/placeholder_cert.jpg" alt="Certificate Placeholder" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3>Certified SolidWorks Professional</h3>
+        <p>Completed advanced SolidWorks training and passed the official certification exam.</p>
+      </div>
+      <div class="cert-card list-card">
+        <img src="images/placeholder_cert2.jpg" alt="Certificate Placeholder" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3>Python Programming Certificate</h3>
+        <p>Proficient in Python for data analysis, automation, and web development projects.</p>
+      </div>
+      <div class="cert-card list-card">
+        <img src="images/placeholder_cert3.jpg" alt="Certificate Placeholder" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3>UI/UX Design Course</h3>
+        <p>Completed a full course on Figma, wireframing, and user-centered design principles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Leadership Roles ====== -->
+  <section>
+    <h2 class="section-title">Leadership Roles</h2>
+    <div class="grid">
+      <div class="lead-card list-card">
+        <h3>Team Lead - Robotics Club</h3>
+        <p>Managed a team of 10 students in designing and programming robotics projects.</p>
+      </div>
+      <div class="lead-card list-card">
+        <h3>Project Manager - Engineering Workshop</h3>
+        <p>Oversaw multiple mechanical design projects and mentored junior designers.</p>
+      </div>
+      <div class="lead-card list-card">
+        <h3>Event Coordinator - Tech Fair</h3>
+        <p>Organized technical workshops, competitions, and presentations for students.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    © 2025 Aturinda Ronnie | Designed with 💙
+  </footer>
+
+</body>
+</html>
